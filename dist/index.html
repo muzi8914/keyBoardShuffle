@@ -1,0 +1,37 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><script>// var vConsole = new VConsole();
+		//rem基数计算
+		function fontSize() {
+			var oHtml = document.getElementsByTagName('html')[0];
+			var view_width = oHtml.getBoundingClientRect().width;
+			var htmlfontsize = 0;
+			// 两种 rem 方法，一种是直接在 i6 下 规定 1 rem = 50 px,其余屏幕宽度按比例进行缩放
+			oHtml.style.fontSize = view_width / 7.5 + "px"
+			// oHtml.style.fontSize = view_width / 3.75 + "px"
+			// 另一种是 划定 区间,在某个区间内，1 rem = ? 进行换算
+			// view_width > 768 ? htmlfontsize = 50 * 768 / 375 : (view_width > 376 ? htmlfontsize = view_width * 48 / 375 : htmlfontsize = view_width * 50 / 375);
+			// oHtml.style.fontSize = (htmlfontsize < 70 ? htmlfontsize : 70) + "px";
+		}
+		fontSize();
+		window.onresize = function(){
+			fontSize();
+		}</script><title>模拟键盘-数字位置随机变化</title><link href=/static/css/app.fd8dc5bffbf76cd92d708f6b02813e9f.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.a2d9b1e6f86a9bb3db3b.js></script><script type=text/javascript src=/static/js/vendor.c0878b4b1bc21a544ded.js></script><script type=text/javascript src=/static/js/app.d3bc7a500420c5d78360.js></script></body><script>// 判断是否是在手机内查看
+		// var ua = navigator.userAgent
+		// if (ua.indexOf('MicroMessenger') == -1) {
+		// 	let inner = document.getElementById('app')
+		// 	inner.innerHTML = '请在微信浏览器内查看'
+		// 	inner.style.fontSize = '18px'
+		// 	inner.style.textAlign = 'center'
+		// }
+
+		// 禁止页面在微信内置浏览器内上下拖动
+		// document.onreadystatechange = function () {
+		// 	if (document.readyState == 'complete') {
+		// 		document.body.style.display = 'block'
+		// 	} else {
+		// 		document.body.style.display = 'none'
+		// 	}
+			// window.onmousewheel = document.onmousewheel = function() { return false }
+		// }
+		// document.body.addEventListener('touchmove',function(e){
+		// 	e.preventDefault()
+		// },{passive: false})</script></html>
