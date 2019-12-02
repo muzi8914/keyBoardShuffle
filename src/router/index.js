@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const keyBoard = ()=> import('@/pages/login')
+const keyBoard = ()=> import('@/pages/login/login')
 
 Vue.use(Router)
 

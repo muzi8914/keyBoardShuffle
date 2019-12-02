@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style>
-@import url(../static/css/reset.less);
+/* @import url(../static/css/reset.css); */
 
 #app {
 	width: 100%;
